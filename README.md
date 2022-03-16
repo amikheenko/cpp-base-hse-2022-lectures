@@ -1,7 +1,7 @@
 # cpp-base-hse-2022-lectures
 
 ## Status
-- [ ] Lecture 1 -
+- [x] [Lecture 1](Lecture%201.md) - @I2L1A1
 - [x] [Lecture 2](Lecture%202.md) - @an-sla
 - [x] [Lecture 3](Lecture%203.md) - @I2L1A1
 - [ ] Lecture 4 -
