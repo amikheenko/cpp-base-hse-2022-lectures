@@ -3,7 +3,7 @@
 ## Status
 - [ ] Lecture 1 -
 - [x] [Lecture 2](Lecture%202.md) - @an-sla
-- [ ] Lecture 3 -
+- [x] [Lecture 3](Lecture%203.md) - @I2L1A1
 - [ ] Lecture 4 -
 - [ ] Lecture 5 -
 - [ ] Lecture 6 -
@@ -13,7 +13,7 @@
 - [ ] Lecture 10 -
 - [x] [Lecture 11](Lecture%2011.md) - @amikheenko
 - [ ] Lecture 12 -
-- [ ] Lecture 13 -
+- [x] [Lecture 13](Lecture%2013.md) - @yamato01127
 - [ ] Lecture 14 -
 - [ ] Lecture 15 -
 - [ ] Lecture 16 -
