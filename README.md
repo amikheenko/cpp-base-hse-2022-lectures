@@ -8,7 +8,7 @@
 - [ ] Lecture 5 -
 - [ ] Lecture 6 -
 - [ ] Lecture 7 -
-- [ ] Lecture 8 -
+- [x] [Lecture 8](Lecture%208.md) - @an-sla
 - [ ] Lecture 9 -
 - [ ] Lecture 10 -
 - [x] [Lecture 11](Lecture%2011.md) - @amikheenko
