@@ -7,7 +7,7 @@
 - [ ] Lecture 4 -
 - [ ] Lecture 5 -
 - [ ] Lecture 6 -
-- [ ] Lecture 7 -
+- [x] [Lecture 7](Lecture%207.md) - @an-sla
 - [x] [Lecture 8](Lecture%208.md) - @an-sla
 - [x] [Lecture 9](Lecture%209.md) - @I2L1A1
 - [ ] Lecture 10 -
