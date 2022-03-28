@@ -232,20 +232,20 @@ int& value_ref = value;`
 
 int main() {
     int value = 10;
-    int& value_ref = value;
+    int *value_ptr = &value;
 
     std::cout << value << std::endl;  // 10
-    std::cout << value_ref << std::endl;  // 10
+    std::cout << *value_ptr << std::endl;  // 10
 
-    value = 20;  // Поменяем value
+    *value_ptr = 20;
 
     std::cout << value << std::endl;  // 20
-    std::cout << value_ref << std::endl;  // 20
+    std::cout << *value_ptr << std::endl;  // 20
 
-    value_ref = 30;  // Поменяем value_ref
+    value = 30;
 
     std::cout << value << std::endl;  // 30
-    std::cout << value_ref << std::endl;  // 30
+    std::cout << *value_ptr << std::endl;  // 30
     return 0;
 }
 ```
