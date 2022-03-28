@@ -6,7 +6,7 @@
 - [x] [Lecture 3](Lecture%203.md) - @I2L1A1
 - [ ] Lecture 4 -
 - [ ] Lecture 5 -
-- [ ] Lecture 6 -
+- [x] [Lecture 6](Lecture%206.md) - @Anastasia21Hse
 - [x] [Lecture 7](Lecture%207.md) - @an-sla
 - [x] [Lecture 8](Lecture%208.md) - @an-sla
 - [x] [Lecture 9](Lecture%209.md) - @I2L1A1
