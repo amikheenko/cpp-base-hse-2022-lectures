@@ -9,7 +9,7 @@
 - [ ] Lecture 6 -
 - [ ] Lecture 7 -
 - [x] [Lecture 8](Lecture%208.md) - @an-sla
-- [ ] Lecture 9 -
+- [x] [Lecture 9](Lecture%209.md) - @I2L1A1
 - [ ] Lecture 10 -
 - [x] [Lecture 11](Lecture%2011.md) - @amikheenko
 - [ ] Lecture 12 -
