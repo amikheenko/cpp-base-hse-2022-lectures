@@ -17,3 +17,4 @@
 - [x] [Lecture 14](Lecture%2014.md) - Чалкин Александр ПМИ 218
 - [ ] Lecture 15 -
 - [x] [Lecture 16](Lecture%2016.md) - Александр Цымбалов ПМИ 219
+- [ ] Lecture 17 -
