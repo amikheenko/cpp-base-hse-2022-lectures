@@ -1,19 +1,19 @@
 # cpp-base-hse-2022-lectures
 
 ## Status
-- [x] [Lecture 1](Lecture%201.md) - @I2L1A1
-- [x] [Lecture 2](Lecture%202.md) - @an-sla
-- [x] [Lecture 3](Lecture%203.md) - @I2L1A1
-- [ ] Lecture 4 -
-- [x] [Lecture 5](Lecture%205.md) - @an-sla
-- [x] [Lecture 6](Lecture%206.md) - @Anastasia21Hse
-- [x] [Lecture 7](Lecture%207.md) - @an-sla
-- [x] [Lecture 8](Lecture%208.md) - @an-sla
-- [x] [Lecture 9](Lecture%209.md) - @I2L1A1
-- [ ] Lecture 10 -
-- [x] [Lecture 11](Lecture%2011.md) - @amikheenko
+- [x] [Lecture 1](Lecture%201.md) - Илья Холопкин КНАД 212
+- [x] [Lecture 2](Lecture%202.md) - Анастасия Слабухо КНАД 212
+- [x] [Lecture 3](Lecture%203.md) - Илья Холопкин КНАД 212
+- [x] [Lecture 4](Lecture%204.md) - Вероника Аксененко ПМИ 219
+- [x] [Lecture 5](Lecture%205.md) - Анастасия Слабухо КНАД 212
+- [x] [Lecture 6](Lecture%206.md) - Анастасия Мигунова КНАД 211
+- [x] [Lecture 7](Lecture%207.md) - Анастасия Слабухо КНАД 212
+- [x] [Lecture 8](Lecture%208.md) - Анастасия Слабухо КНАД 212
+- [x] [Lecture 9](Lecture%209.md) - Илья Холопкин КНАД 212
+- [x] [Lecture 10](Lecture%2010.md) - Мария Розаева ПМИ 218
+- [x] [Lecture 11](Lecture%2011.md) - Артем Михеенко КНАД 212
 - [ ] Lecture 12 -
-- [x] [Lecture 13](Lecture%2013.md) - @yamato01127
-- [x] [Lecture 14](Lecture%2014.md) - Чалкин Александр ПМИ 218-2 
+- [x] [Lecture 13](Lecture%2013.md) - Тимур Лиджиев КНАД 212
+- [x] [Lecture 14](Lecture%2014.md) - Чалкин Александр ПМИ 218
 - [ ] Lecture 15 -
-- [ ] Lecture 16 -
+- [x] [Lecture 16](Lecture%2016.md) - Александр Цымбалов ПМИ 219
