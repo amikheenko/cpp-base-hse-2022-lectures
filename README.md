@@ -12,7 +12,7 @@
 - [x] [Lecture 9](Lecture%209.md) - Илья Холопкин КНАД 212
 - [x] [Lecture 10](Lecture%2010.md) - Мария Розаева ПМИ 218
 - [x] [Lecture 11](Lecture%2011.md) - Артем Михеенко КНАД 212
-- [ ] Lecture 12 -
+- [x] [Lecture 12](Lecture%2012.md) - Артем Михеенко КНАД 212
 - [x] [Lecture 13](Lecture%2013.md) - Тимур Лиджиев КНАД 212
 - [x] [Lecture 14](Lecture%2014.md) - Чалкин Александр ПМИ 218
 - [ ] Lecture 15 -
