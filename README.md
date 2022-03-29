@@ -14,6 +14,6 @@
 - [x] [Lecture 11](Lecture%2011.md) - @amikheenko
 - [ ] Lecture 12 -
 - [x] [Lecture 13](Lecture%2013.md) - @yamato01127
-- [ ] Lecture 14 -
+- [x] [Lecture 14](Lecture%2014.md) - Чалкин Александр ПМИ 218-2 
 - [ ] Lecture 15 -
 - [ ] Lecture 16 -
