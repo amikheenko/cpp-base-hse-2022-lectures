@@ -18,4 +18,4 @@
 - [x] [Lecture 15](Lecture%2015.md) - Дмитрий Рамусь КНАД 212
 - [x] [Lecture 16](Lecture%2016.md) - Александр Цымбалов ПМИ 219
 - [x] [Lecture 17](Lecture%2017.md) - Анастасия Слабухо КНАД 212
-- [ ] Lecture 18 -
+- [x] [Lecture 18](Lecture%2018.md) - Илья Блинов КНАД 212
