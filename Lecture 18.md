@@ -44,15 +44,15 @@
 #include <chrono>
 
 int main() {
-std::vector<int> values;
+    std::vector<int> values;
 	
-	for (size_t i = 0; i < 100000000; ++i) {
-		values.push_back(i);
-	}
+    for (size_t i = 0; i < 100000000; ++i) {
+        values.push_back(i);
+    }
 	
 	 
-	std::cout << std::accumulate(values.begin(), values.end(), 0) << std::endl; // функция, которая применяет к начальному значению (в нашем случае - 0) оператор + с элементами вектора
-	return 0;
+    std::cout << std::accumulate(values.begin(), values.end(), 0) << std::endl; // функция, которая применяет к начальному значению (в нашем случае - 0) оператор + с элементами вектора
+    return 0;
 }
 ```
 
@@ -64,16 +64,16 @@ std::vector<int> values;
 int main() {
     std::vector<int> values;
 	
-	auto start = std::chrono::steady_clock::now();
-	for (size_t i = 0; i < 100000000; ++i) {
-		values.push_back(i);
-	}
-	auto end = std::chrono::steady_clock::now();
+    auto start = std::chrono::steady_clock::now();
+    for (size_t i = 0; i < 100000000; ++i) {
+        values.push_back(i);
+    }
+    auto end = std::chrono::steady_clock::now();
 		
-	std::cout << (end - start).count() << std::endl;  // так получаем продолжительность кода, метод .count() возвращает количество условных единиц duration
+    std::cout << (end - start).count() << std::endl;  // так получаем продолжительность кода, метод .count() возвращает количество условных единиц duration
 	
-	std::cout << std::accumulate(values.begin(), values.end(), 0) << std::endl; // функция, которая применяет к начальному значению (в нашем случае - 0) оператор + с элементами вектора
-	return 0;
+    std::cout << std::accumulate(values.begin(), values.end(), 0) << std::endl; // функция, которая применяет к начальному значению (в нашем случае - 0) оператор + с элементами вектора
+    return 0;
 }
 ```
 
@@ -95,28 +95,28 @@ template<
 ```cpp
 
 int main() {
-	std::vector<int> values;
+    std::vector<int> values;
 	
-	auto start = std::chrono::steady_clock::now();
-	for (size_t i = 0; i < 100000000; ++i) {
-		values.push_back(i);
-	}
-	auto end = std::chrono::steady_clock::now();
+    auto start = std::chrono::steady_clock::now();
+    for (size_t i = 0; i < 100000000; ++i) {
+        values.push_back(i);
+    }
+    auto end = std::chrono::steady_clock::now();
 		
-	//std::ratio<1, 1> - секунда, числитель 1, знаменатель 1
-	//std::ratio<1, 1000> - миллисекунда, числитель 1, знаменатель 1000
-	//std::ratio<1, 1000000> - микросекунда, числитель 1, знаменатель 1000000
+    //std::ratio<1, 1> - секунда, числитель 1, знаменатель 1
+    //std::ratio<1, 1000> - миллисекунда, числитель 1, знаменатель 1000
+    //std::ratio<1, 1000000> - микросекунда, числитель 1, знаменатель 1000000
 	
-	//std::chrono::duration<int64_t, std::milli> elapsed = end - start; std::milli - то же самое , что и std::ratio<1, 1000>
-	//выдаст ошибку, так как при преобразовании дробей с большим знаменателем в дроби с меньшим знаменателем дает большую погрешность
+    //std::chrono::duration<int64_t, std::milli> elapsed = end - start; std::milli - то же самое , что и std::ratio<1, 1000>
+    //выдаст ошибку, так как при преобразовании дробей с большим знаменателем в дроби с меньшим знаменателем дает большую погрешность
 	
-	std::chrono::duration<int64_t, std::nano> elapsed = end - start;
+    std::chrono::duration<int64_t, std::nano> elapsed = end - start;
 	
-	std::cout << elapsed.count() << "ns" << std::endl;  // 
+    std::cout << elapsed.count() << "ns" << std::endl;  // 
 	 
 	  
-	std::cout << std::accumulate(values.begin(), values.end(), 0) << std::endl;
-	 return 0;
+    std::cout << std::accumulate(values.begin(), values.end(), 0) << std::endl;
+    return 0;
 }
 ```
 
@@ -148,19 +148,19 @@ private:
 using namespace std::chrono_literals;
 
 int main() {
-	std::vector<int> values;
+    std::vector<int> values;
 
-	{
-		Timer timer("for");
-		for (size_t i = 0; i < 100000000; ++i) {
-			values.push_back(i);
-			std::this_thread::sleep_for(10ms); // из namespace std::chrono_literals;
-			// или так: std::this_thread::sleep_until(std::chrono::steady_clock::now() + 10ms);
-		}
-	}
+    {
+        Timer timer("for");
+        for (size_t i = 0; i < 100000000; ++i) {
+            values.push_back(i);
+            std::this_thread::sleep_for(10ms); // из namespace std::chrono_literals;
+            // или так: std::this_thread::sleep_until(std::chrono::steady_clock::now() + 10ms);
+        }
+    }
 
-	std::cout << std::accumulate(values.begin(), values.end(), 0) << std::endl;
-	return 0;
+    std::cout << std::accumulate(values.begin(), values.end(), 0) << std::endl;
+    return 0;
 }
 
 // Вывод:
@@ -189,23 +189,23 @@ int main() {
 using namespace std::chrono_literals;
 
 int Calc(int x) {
-	int result = x * x;
-	std::cout << result << std::endl;
-	std::this_thread::sleep_for(1s);
-	return result;
+    int result = x * x;
+    std::cout << result << std::endl;
+    std::this_thread::sleep_for(1s);
+    return result;
 }
 
 int main() {
 
-	auto future = std::async(Calc, 10); // передаём указатель на функцию и набор параметров для неё
-	// std::future<int> future = std::async(Calc, 10); // функция std::async возвращается специальный объект, который имеет тип std::future
+    auto future = std::async(Calc, 10); // передаём указатель на функцию и набор параметров для неё
+    // std::future<int> future = std::async(Calc, 10); // функция std::async возвращается специальный объект, который имеет тип std::future
 	
-	// future.wait() - метод, который "говорит дождаться", пока во future не положат результата
-	// future.get() - позволяет получить результат, который лежит во future
-	// Оба метода являются "блокирующими", то есть программа будет ждать, пока асинхронная функция не закончит свои вычисления и не положит результат во future.
+    // future.wait() - метод, который "говорит дождаться", пока во future не положат результата
+    // future.get() - позволяет получить результат, который лежит во future
+    // Оба метода являются "блокирующими", то есть программа будет ждать, пока асинхронная функция не закончит свои вычисления и не положит результат во future.
 
-	std::cout << "Result: " << future.get() << std::endl;
-	return 0;
+    std::cout << "Result: " << future.get() << std::endl;
+    return 0;
 }
 
 // Вывод:
@@ -226,19 +226,19 @@ int main() {
 using namespace std::chrono_literals;
 
 int Calc(int x) {
-	int result = x * x;
-	return result;
+    int result = x * x;
+    return result;
 }
 
 int main() {
 
-	std::future<int> future1 = std::async(Calc, 10);
-	std::future<int> future2 = std::async(Calc, 20);
+    std::future<int> future1 = std::async(Calc, 10);
+    std::future<int> future2 = std::async(Calc, 20);
 
-	std::cout << "Result: " << future1.get() << std::endl;
-	std::cout << "Result: " << future2.get() << std::endl;
+    std::cout << "Result: " << future1.get() << std::endl;
+    std::cout << "Result: " << future2.get() << std::endl;
 
-	return 0;
+    return 0;
 }
 
 // Вывод:
@@ -253,24 +253,24 @@ using namespace std::chrono_literals;
 
 int main() {
 
-	// с помощью future можно достать будущий результат
-	// а с помощью promise этот результат можно положить
-	std::promise<int> promise;
-	auto future = promise.get_future();
+    // с помощью future можно достать будущий результат
+    // а с помощью promise этот результат можно положить
+    std::promise<int> promise;
+    auto future = promise.get_future();
 
-	// wait_for позволяет ждать результата определённое время
-	if (future.wait_for(1s) == std::future_status::timeout) {
-		std::cout << "Timeout" << std::endl;
-	}
+    // wait_for позволяет ждать результата определённое время
+    if (future.wait_for(1s) == std::future_status::timeout) {
+        std::cout << "Timeout" << std::endl;
+    }
 		
-	// устанавливает результат в future 
-	promise.set_value(100);
+    // устанавливает результат в future 
+    promise.set_value(100);
 
-	if (future.wait_for(1s) == std::future_status::ready) {
-		std::cout << "Ready" << future.get() << std::endl;
-	}
+    if (future.wait_for(1s) == std::future_status::ready) {
+        std::cout << "Ready" << future.get() << std::endl;
+    }
 
-	return 0;
+    return 0;
 }
 
 // Вывод:
@@ -286,28 +286,28 @@ int main() {
 using namespace std::chrono_literals;
 
 int main() {
-	std::cout << std::thread::hardware_concurrency() << std::endl;
-	// выводит физическое количество потоков (ядер)
+    std::cout << std::thread::hardware_concurrency() << std::endl;
+    // выводит физическое количество потоков (ядер)
 		
-	std::thread thread1([]() {
-		for (size_t i = 0; i < 10; ++i) {
-			std::this_thread::sleep_for(100ms);
-			std::cout << "Thread 1: " << i << std::endl;
-		}
-	});
+    std::thread thread1([]() {
+        for (size_t i = 0; i < 10; ++i) {
+            std::this_thread::sleep_for(100ms);
+            std::cout << "Thread 1: " << i << std::endl;
+        }
+    });
 
-	std::thread thread2([]() {
-		for (size_t i = 0; i < 10; ++i) {
-			std::this_thread::sleep_for(200ms);
-			std::cout << "Thread 2: " << i << std::endl;
-		}
-	});
+    std::thread thread2([]() {
+        for (size_t i = 0; i < 10; ++i) {
+            std::this_thread::sleep_for(200ms);
+            std::cout << "Thread 2: " << i << std::endl;
+        }
+    });
 
-	thread1.join();
-	thread2.join();
-	// join() "заставляет дождаться", пока thread1 и thread2 не закончат работу, и позволяет основному потоку увидеть изменения данных в вызванных потоках
+    thread1.join();
+    thread2.join();
+    // join() "заставляет дождаться", пока thread1 и thread2 не закончат работу, и позволяет основному потоку увидеть изменения данных в вызванных потоках
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -320,24 +320,24 @@ int TOTAL_ITERATIONS = 0;
 
 int main() {
 
-	std::thread thread1([]() {
-		for (size_t i = 0; i < 10; ++i) {
-			++TOTAL_ITERATIONS;
-		}
-	});
+    std::thread thread1([]() {
+        for (size_t i = 0; i < 10; ++i) {
+            ++TOTAL_ITERATIONS;
+        }
+    });
 
-	std::thread thread2([]() {
-		for (size_t i = 0; i < 10; ++i) {
-			++TOTAL_ITERATIONS;
-		}
-	});
+    std::thread thread2([]() {
+        for (size_t i = 0; i < 10; ++i) {
+            ++TOTAL_ITERATIONS;
+        }
+    });
 
-	thread1.join();
-	thread2.join();
+    thread1.join();
+    thread2.join();
 
-	std::cout << TOTAL_ITERATIONS << std::endl;
+    std::cout << TOTAL_ITERATIONS << std::endl;
 
-	return 0;
+    return 0;
 }
 
 // Вывод:
@@ -366,19 +366,19 @@ int main() {
     std::mutex MUTEX; // должен быть доступен во всех потоках
     ...
     int main() {
-    	std::thread thread1([]() {
-    		MUTEX.lock();
-    		...
-    		MUTEX.unlock(); // нужно не забыть позвать unlock() в этом же потоке, иначе получим deadlock (когда ни один поток не может "захватить блокировку")
-    		// это может произойти и из-за вызова исключения или return
+        std::thread thread1([]() {
+            MUTEX.lock();
+            ...
+            MUTEX.unlock(); // нужно не забыть позвать unlock() в этом же потоке, иначе получим deadlock (когда ни один поток не может "захватить блокировку")
+            // это может произойти и из-за вызова исключения или return
+        });
+        ...
+        std::thread thread2([]() {
+            MUTEX.lock(); // если первый поток уже начал и ещё не закончил выполнять свои операции, второй поток не сможет начать выполнять свои
+            ...
+    	    MUTEX.unlock();
     	});
-    	...
-    	std::thread thread2([]() {
-    		MUTEX.lock(); // если первый поток уже начал и ещё не закончил выполнять свои операции, второй поток не сможет начать выполнять свои
-    		...
-    		MUTEX.unlock();
-    	});
-    	...
+        ...
     }
     ```
     
@@ -388,9 +388,9 @@ int main() {
     
     ```cpp
     ...
-    	std::thread thread1([]() {
-    			std::lock_guard lock(MUTEX); // в конструкторе зовёт Mutex.lock(), в деструкторе зовёт Mutex.unlock()
-    			...
-    	});
+    std::thread thread1([]() {
+        std::lock_guard lock(MUTEX); // в конструкторе зовёт Mutex.lock(), в деструкторе зовёт Mutex.unlock()
+        ...
+    });
     ...
     ```
